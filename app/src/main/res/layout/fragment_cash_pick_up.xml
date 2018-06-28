@@ -1,0 +1,274 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.saxxis.recharge.fragments.CashPickUpFragment">
+
+    <!--<TextView-->
+        <!--android:layout_width="220dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Available Balance &#8377; 0"-->
+        <!--android:textSize="16sp"-->
+        <!--android:padding="10dp"-->
+        <!--android:id="@+id/txt_walletbalance"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/buttonshape"/>-->
+
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:id="@+id/tinplay_amount">-->
+
+        <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="15dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textColor="@color/colorchange"-->
+            <!--android:hint="Amount (&#8377;)"-->
+            <!--android:textColorHint="@color/colorchange"-->
+            <!--android:inputType="number"-->
+            <!--android:id="@+id/add_money_et_money"/>-->
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:weightSum="3"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:maxWidth="70dp"-->
+            <!--android:text="1000"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:padding="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/txt_1000"-->
+            <!--android:background="@drawable/add_money_bg"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:maxWidth="70dp"-->
+            <!--android:text="500"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:padding="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/txt_500"-->
+            <!--android:background="@drawable/add_money_bg"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:maxWidth="70dp"-->
+            <!--android:text="100"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:padding="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/txt_100"-->
+            <!--android:background="@drawable/add_money_bg"/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/buttonshape"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="16sp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="Add Money"-->
+        <!--android:id="@+id/add_money_btn"-->
+        <!--android:layout_margin="10dp"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tipl_deposit_name">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorchange"
+                        android:hint="Name"
+                        android:textColorHint="@color/colorchange"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:id="@+id/deposit_name"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tipl_deposit_mobile">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:maxLength="10"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorchange"
+                        android:hint="Mobile no"
+                        android:textColorHint="@color/colorchange"
+                        android:inputType="phone"
+                        android:id="@+id/deposit_mobileno"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tipl_deposit_emailadd">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorchange"
+                        android:hint="E-mail Address"
+                        android:textColorHint="@color/colorchange"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/deposit_emailadd"/>
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tipl_deposit_amount">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/deposit_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Amount"
+                        android:inputType="number"
+                        android:padding="15dp"
+                        android:textColor="@color/colorchange"
+                        android:textColorHint="@color/colorchange" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:textColor="@color/colorchange"
+                        android:hint="Add Location"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/text_border"
+                        android:textColorHint="@color/colorchange"
+                        android:textSize="16sp"
+                        android:id="@+id/deposit_addlocation"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tipl_deposit_houseno">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:textColor="@color/colorchange"
+                        android:hint="Enter House number"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorchange"
+                        android:id="@+id/deposit_houseno"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tipl_deposit_landmark">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:textColor="@color/colorchange"
+                        android:hint="Enter Land Mark"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorchange"
+                        android:id="@+id/deposit_landmark_address"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<fragment-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:id="@+id/depositmap"-->
+                <!--class="com.google.android.gms.maps.SupportMapFragment"/>-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Submit"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:id="@+id/picksubmit"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/buttonshape"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

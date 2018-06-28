@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/flight_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@android:color/transparent"
+        android:hint="From"
+        android:inputType="text"
+        android:maxLength="13"
+        android:maxLines="1"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/silver"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:background="@color/silver" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/flight_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@android:color/transparent"
+        android:hint="To"
+        android:inputType="text"
+        android:maxLength="13"
+        android:maxLines="1"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/silver"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:background="@color/silver" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of Journey"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textColor="@color/silver"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/f_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawableStart="@drawable/ic_calendar"
+        android:fontFamily="monospace"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="06/08/2017"
+        android:textColor="@color/colorchange"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/flightsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/ic_rectangle"
+        android:gravity="center"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
