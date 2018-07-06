@@ -64,8 +64,6 @@ public class CompleteAddMoneyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complete_add_money);
-        setContentView(R.layout.activity_add_money);
-
         ButterKnife.bind(this);
         mUser = new UserPref(CompleteAddMoneyActivity.this);
         setSupportActionBar(toolbar);

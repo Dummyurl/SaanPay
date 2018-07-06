@@ -128,6 +128,8 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18sp" />
+
+
     </LinearLayout>
 
 
@@ -141,5 +143,6 @@
         app:tabGravity="center"
         app:tabIndicatorColor="@color/colorWhite"
         app:tabIndicatorHeight="2dp" />
+
 
 </android.support.design.widget.CoordinatorLayout>
