@@ -1,2 +1,4 @@
 include ':app'
 include ':libraryMobilePaymentSDK'
+include ':libraryMobilePaymentSDK'
+include ':libraryMobilePaymentSDK'

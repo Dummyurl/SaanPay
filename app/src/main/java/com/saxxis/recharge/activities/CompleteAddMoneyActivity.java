@@ -64,6 +64,7 @@ public class CompleteAddMoneyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complete_add_money);
+        setContentView(R.layout.activity_add_money);
 
         ButterKnife.bind(this);
         mUser = new UserPref(CompleteAddMoneyActivity.this);
@@ -137,9 +138,11 @@ public class CompleteAddMoneyActivity extends AppCompatActivity {
         newPayIntent.putExtra("amt", amount);//Should be 3 decimal number i.e 51.000
         newPayIntent.putExtra("txnid", orderID);
         newPayIntent.putExtra("date", new SimpleDateFormat("dd/MM/yyyy hh:mm:ss", Locale.ENGLISH).format(new Date()));//Should be in same format
+        newPayIntent.putExtra("signature_request", "5101ac499809c58a23");
+        newPayIntent.putExtra("signature_response", "287d27ac75d026523e");
 
         //        newPayIntent.putExtra("bankid", “2001”); //Should be valid bank id // Optional
-        newPayIntent.putExtra("discriminator", "NB"); // NB or IMPS or All ONLY (value should be same as commented)
+        newPayIntent.putExtra("discriminator", "All"); // BN or IMPS or All ONLY (value should be same as commented)
         //use below Production url only with Production "Library-MobilePaymentSDK", Located inside PROD folder
         newPayIntent.putExtra("ru", "https://payment.atomtech.in/mobilesdk/param"); //ru FOR Production
 
@@ -181,6 +184,8 @@ public class CompleteAddMoneyActivity extends AppCompatActivity {
         newPayIntent.putExtra("cardtype", cardType);//strPaymentMode);// CC or DC ONLY (value should be same as commented)
         newPayIntent.putExtra("cardAssociate", cardSignatureType);//strCardType);// for VISA and MASTER. MAESTRO ONLY (value should be same as commented)
         newPayIntent.putExtra("surcharge", "NO");// Should be passed YES if surcharge is applicable else pass NO
+        newPayIntent.putExtra("signature_request", "5101ac499809c58a23");
+        newPayIntent.putExtra("signature_response", "287d27ac75d026523e");
 //        //use below Production url only with Production "Library-MobilePaymentSDK", Located inside PROD folder
         newPayIntent.putExtra("ru", "https://payment.atomtech.in/mobilesdk/param"); //ru FOR Production
 //        use below UAT url only with UAT "Library-MobilePaymentSDK", Located inside UAT folder
@@ -222,14 +227,17 @@ public class CompleteAddMoneyActivity extends AppCompatActivity {
 //                            if (resValue[i].contains("success_00")){
                     String finalAddWallet = "";
                     if (paymentMode.equals("DC") || paymentMode.equals("CC")) {
-                        finalAddWallet = AppConstants.SERVER_URL + "index.php?option=com_jbackend&view=request&action=get&module=user&resource=atompayment" +
+                       finalAddWallet = AppConstants.SERVER_URL + "index.php?option=com_jbackend&view=request&action=get&module=user&resource=atompayment" +
                                 "&userid=" + mUser.getUserId() + "&ordernumber=" + orderID + "&Amount=" + amount +
                                 "&transationid=" + resValue[20] + "&ResponseCode=" + message.replaceAll(" ", "") + "&ResponseMessage=" + jsonObject.toString();
+
+
                     }
                     if (paymentMode.equals("NB") || paymentMode.equals("IMPS")) {
-                        finalAddWallet = AppConstants.SERVER_URL + "index.php?option=com_jbackend&view=request&action=get&module=user&resource=atompayment" +
-                                "&userid=" + mUser.getUserId() + "&ordernumber=" + orderID + "&Amount=" + amount +
-                                "&transationid=" + resValue[9] + "&ResponseCode=" + message.replaceAll(" ", "") + "&ResponseMessage=" + jsonObject.toString();
+                       finalAddWallet = AppConstants.SERVER_URL + "index.php?option=com_jbackend&view=request&action=get&module=user&resource=atompayment" +
+                               "&userid=" + mUser.getUserId() + "&ordernumber=" + orderID + "&Amount=" + amount +
+                               "&transationid=" + resValue[9] + "&ResponseCode=" + message.replaceAll(" ", "") + "&ResponseMessage=" + jsonObject.toString();
+
                     }
 
                     Log.e("response", finalAddWallet);

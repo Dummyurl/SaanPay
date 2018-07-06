@@ -888,7 +888,7 @@ public class CompletePaymentActivity extends AppCompatActivity implements Patter
                 }
 
                 if (jsonObject.optString("f_code").equalsIgnoreCase("F")){
-                        Toast.makeText(CompletePaymentActivity.this, "Transaction Failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(CompletePaymentActivity.this, "Transaction Fail", Toast.LENGTH_SHORT).show();
                 }
 
                 if (jsonObject.optString("f_code").equalsIgnoreCase("Ok")){

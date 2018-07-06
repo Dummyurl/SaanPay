@@ -165,7 +165,8 @@
             android:paddingTop="@dimen/activity_horizontal_margin"
             android:text="Select Payment methods"
             android:textColor="@color/silver"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:visibility="gone" />
 
         <View
             android:layout_width="match_parent"
@@ -184,7 +185,8 @@
             android:paddingTop="@dimen/activity_horizontal_margin"
             android:text="Credit Card"
             android:textColor="@color/colorchange"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:visibility="gone" />
 
         <View
             android:layout_width="match_parent"
@@ -203,7 +205,8 @@
             android:paddingTop="@dimen/activity_horizontal_margin"
             android:text="Debit Card"
             android:textColor="@color/colorchange"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:visibility="gone" />
 
         <View
             android:layout_width="match_parent"
@@ -220,7 +223,7 @@
             android:gravity="start|center_vertical"
             android:paddingBottom="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_horizontal_margin"
-            android:text="Net Banking"
+            android:text="Pay now"
             android:textColor="@color/colorchange"
             android:textSize="14sp" />
 

@@ -104,6 +104,7 @@ public class AppConstants {
 
     public static final String REPORTS = SERVER_URL+"index.php?option=com_jbackend&view=request&module=user&action=get&resource=distributordetais&userid=";
 
+    public static final String QR_GENERATE =SERVER_URL+"index.php?option=com_jbackend&view=request&module=user&action=get&resource=getuserqrcode&userid=";
 
 
     /**

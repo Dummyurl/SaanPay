@@ -33,7 +33,8 @@
             android:padding="@dimen/activity_horizontal_margin"
             android:text="Select Payment methods"
             android:textColor="@color/silver"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:visibility="gone" />
 
         <View
             android:layout_width="match_parent"
@@ -53,7 +54,8 @@
             android:padding="@dimen/activity_horizontal_margin"
             android:text="Credit Card"
             android:textColor="@color/colorchange"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:visibility="gone" />
 
         <View
             android:layout_width="match_parent"
@@ -73,7 +75,8 @@
             android:padding="@dimen/activity_horizontal_margin"
             android:text="Debit Card"
             android:textColor="@color/colorchange"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:visibility="gone" />
 
         <View
             android:layout_width="match_parent"
@@ -82,18 +85,23 @@
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:background="@color/silver" />
 
-        <TextView
-            android:id="@+id/addmoney_netbanking"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/nexticon"
-            android:drawableRight="@drawable/nexticon"
-            android:gravity="start|center_vertical"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:text="Net Banking"
-            android:textColor="@color/colorchange"
-            android:textSize="14sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addmoney_netbanking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="CLICK HERE TO PROCCED"
+                android:textColor="@color/colorchange"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
 
         <View
             android:layout_width="match_parent"
